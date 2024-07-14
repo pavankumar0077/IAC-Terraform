@@ -12,3 +12,6 @@
 
 ![image](https://github.com/user-attachments/assets/07aa59d2-4028-4f1c-8b43-5e9ea7e8aa3d)
 
+## variable block attributes
+
+![image](https://github.com/user-attachments/assets/79d3609f-0872-49a0-a119-b9ff21ea82c1)
