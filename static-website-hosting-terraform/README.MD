@@ -1,5 +1,7 @@
 # HOSTING STATIC WEBSITE USING S3 BUCKET, PROVIOSING USING TERRAFORM
 
+REF LINK : ``` https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_website_configuration ```
+
 - 1. Create an S3 Bucket: Start by creating an S3 bucket to sto
 name should be globally unique across all AWS accounts.
 
