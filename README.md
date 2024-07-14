@@ -1,5 +1,10 @@
 # IAC-Terraform
 
+REF LINK : ``` https://developer.hashicorp.com/terraform/language/functions ```
+``` https://developer.hashicorp.com/terraform/language/values/variables ```
+``` https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance ```
+``` https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository ```
+
 ### RESOURCE 
 
 ![image](https://github.com/user-attachments/assets/a123117a-8eb3-4806-9002-6eb03a02c3f6)
@@ -32,3 +37,30 @@
 - ![image](https://github.com/user-attachments/assets/7b232144-e39a-4c9f-bce0-8ff13d542204)
 
 - If we don't provide values in variables.tf file then it will ask for value when we using ``` terrafrom plan ```
+
+## Providing values using -var as CLI argument
+
+- ![image](https://github.com/user-attachments/assets/f21db927-a0fe-429f-86ea-8f62007adef0)
+
+- ``` terrafrom plan -var="bucket_name=sdpfndspfnpsdfs" ```
+- ``` terrafrom apply -auto-approve -var="bucket_name=sdpfndspfnpsdfs" ```
+
+# Using variable with different env's
+
+- ![image](https://github.com/user-attachments/assets/66761ddf-87ee-4fea-816a-72f927ddff14)
+- ``` terraform plan -var="bucket_name=sldjf123343pavan" -var-file="staging.tfvars" ```
+
+- ``` terraform plan -var="bucket_name=sldjf123343pavan" -var-file="prod.tfvars" ```
+
+## Usung TF_VAR
+``` export TF_VAR_username="stage" ```
+
+## Terrafrom Outputs
+
+![image](https://github.com/user-attachments/assets/5490f9c0-c87c-4020-8c8f-b836d9c73e23)
+
+- ![image](https://github.com/user-attachments/assets/0d8d5a76-786d-4ac7-9e30-ac2678e32bf1)
+
+- ``` terraform output ```
+
+
