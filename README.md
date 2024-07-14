@@ -20,3 +20,7 @@
 ## Variables with different data types
 
 ![image](https://github.com/user-attachments/assets/56f7d4db-fa85-4f04-bc6b-b6a71a44b616)
+
+## Ways to define variables in terraform
+
+![image](https://github.com/user-attachments/assets/7efb7a2b-3588-49ff-a040-a678a269253c)
