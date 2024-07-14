@@ -24,3 +24,11 @@
 ## Ways to define variables in terraform
 
 ![image](https://github.com/user-attachments/assets/7efb7a2b-3588-49ff-a040-a678a269253c)
+
+## Providing the values by using CLI whiling creating resources
+
+- ![image](https://github.com/user-attachments/assets/17e1f7f3-0c54-451b-bfe8-53e28cecd7dd)
+
+- ![image](https://github.com/user-attachments/assets/7b232144-e39a-4c9f-bce0-8ff13d542204)
+
+- If we don't provide values in variables.tf file then it will ask for value when we using ``` terrafrom plan ```
