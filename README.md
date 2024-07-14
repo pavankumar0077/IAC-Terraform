@@ -15,3 +15,8 @@
 ## variable block attributes
 
 ![image](https://github.com/user-attachments/assets/79d3609f-0872-49a0-a119-b9ff21ea82c1)
+
+
+## Variables with different data types
+
+![image](https://github.com/user-attachments/assets/56f7d4db-fa85-4f04-bc6b-b6a71a44b616)
