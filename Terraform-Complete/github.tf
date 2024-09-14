@@ -1,19 +1,19 @@
-terraform {
-  required_providers {
-    github = {
-      source = "integrations/github"
-      version = "6.2.3"
-    }
-  }
-}
+# terraform {
+#   required_providers {
+#     github = {
+#       source = "integrations/github"
+#       version = "6.2.3"
+#     }
+#   }
+# }
 
-provider "github" {
-  token = "xxxxxxxxx"
-}
+# provider "github" {
+#   token = "xxxxxxxxx"
+# }
 
-resource "github_repository" "example" {
-  name        = "testing-repo"
-  description = "My awesome codebase"
+# resource "github_repository" "example" {
+#   name        = "testing-repo"
+#   description = "My awesome codebase"
 
-  visibility = "public"
-}
+#   visibility = "public"
+# }
