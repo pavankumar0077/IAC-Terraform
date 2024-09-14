@@ -1,4 +1,4 @@
-### Terraform Statefile
+### Terraform Statefile Intro
 
 - Terraform will manage the state management that means when infrastructure is created that management is done by terraform in the form of a state file so what are the infrastructure that are to be created or created will be stored in a state file.
 - So this state file or terraform will check if the difference between actual resource and desired resource
