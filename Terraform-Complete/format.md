@@ -11,11 +11,11 @@ Terraform Format
  - 
  - terraform init
  - terraform fmt
- - terraform state
  - terraform validate
  - terraform plan
  - terraform apply (--auto-approve)
  - terraform destroy (--auto-destory), Individual resource delete or auto destroy there are some other commands based on this.
+ - terraform state
 
 
 
