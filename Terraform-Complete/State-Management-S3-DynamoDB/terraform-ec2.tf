@@ -11,6 +11,10 @@ provider "aws" {
   region = var.aws-region
 }
 
+# resource "time_sleep" "wait_time_in_sec" {
+#   create_duration = "100s"
+# }
+
 data "aws_ami" "amazonami" {
 
   most_recent = true
@@ -42,3 +46,11 @@ resource "aws_instance" "my-ec2" {
   }
 }
 
+terraform {
+  backend "s3" {
+    bucket         = "tf-state-management-007"
+    key            = "network/terraform.tfstate"
+    region         = "ap-south-1"
+    dynamodb_table = "terraform-state-locking"
+  }
+}
