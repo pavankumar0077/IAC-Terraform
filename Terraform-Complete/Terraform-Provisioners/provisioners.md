@@ -53,7 +53,7 @@ Provisioners Types
 
 Creation Time Provisioner
 --
-- It runs only during creation not during updating or other lifecycle.
+- It runs only during creation not during updating or other lifecycle of the provisioner
 - If this fails due to any reason then the resource will be marked as tainted.
 
 Destroy Time Provisioner
