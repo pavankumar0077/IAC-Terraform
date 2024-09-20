@@ -35,31 +35,31 @@ data "aws_ami" "amazonami" {
 
 
 resource "aws_security_group" "allowing_ssh" {
-  name = "allowing_ssh"
+  name        = "allowing_ssh"
   description = "Allowing SSH"
 
   ingress {
     description = "Inbound Traffic"
-    to_port = 22
-    from_port = 22
-    protocol = "tcp"
+    to_port     = 22
+    from_port   = 22
+    protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
 
-    egress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
+  #  egress {
+  #   from_port   = 0
+  #   to_port     = 0
+  #   protocol    = "-1"
+  #   cidr_blocks = ["0.0.0.0/0"]
+  # } 
 
 }
 
 resource "aws_instance" "my-ec2" {
-  ami           = data.aws_ami.amazonami.id
-  instance_type = var.instance-type
-  vpc_security_group_ids = aws_security_group.allowing_ssh.id
-  key_name      = "demo"
+  ami                    = data.aws_ami.amazonami.id
+  instance_type          = var.instance-type
+  vpc_security_group_ids = [aws_security_group.allowing_ssh.id]
+  key_name               = "demo"
 
   tags = {
     Name = "My-Server"
@@ -76,11 +76,19 @@ resource "aws_instance" "my-ec2" {
   #   command = "echo ${aws_instance.my-ec2.private_ip} > private_ip.txt"
   # }
 
-# Creation time provisioner
+  # Creation time provisioner
   provisioner "remote-exec" {
+    on_failure = continue
     inline = [
       "sudo yum -y install nano"
     ]
+  }
+
+  provisioner "remote-exec" {
+    when = destroy
+    inline = [ 
+      "sudo yum -y remove nano"
+     ]
   }
 }
 
