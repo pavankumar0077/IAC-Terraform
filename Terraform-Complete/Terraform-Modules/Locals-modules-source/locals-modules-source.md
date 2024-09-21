@@ -9,3 +9,8 @@
 
 - REF LINK = ``` https://developer.hashicorp.com/terraform/language/modules/sources ```
 
+- ![alt text](image-2.png)
+
+- ![alt text](image-3.png)
+
+- Source can be any as mentioned in documentation.
