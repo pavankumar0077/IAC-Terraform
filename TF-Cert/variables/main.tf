@@ -47,3 +47,27 @@ resource "aws_vpc" "myvpc" {
   }
 }
 
+output "vpcid" {
+  value =aws_vpc.myvpc.id # aws-resource-name . name that we have given for that resource . id or arn or other attributes
+  # https://developer.hashicorp.com/terraform/language/values/variables
+
+}
+
+# The difference between list and tuple is for list we have to define one data type
+# For TUPLE we can defined muliple datatypes 
+variable "mytuple" {
+  type = tuple([string,number,string])
+  default = [ "cat", 1, "Dog" ]
+}
+
+variable "myobject" {
+  type = object({
+    name = string,
+    port = list(number)
+    default = {
+      name = "TJ"
+      port = [22, 25, 80]
+    } 
+  })
+}
+
