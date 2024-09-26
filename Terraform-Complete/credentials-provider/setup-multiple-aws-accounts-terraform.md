@@ -115,6 +115,11 @@ For a different profile, change the AWS_PROFILE variable:
 export AWS_PROFILE=profile2 
 terraform apply 
 
+
+4. export AWS_ACCESS_KEY_ID=XXXX  - linux
+   setx AWS_SECRET_KEY_ID=XXX  - windows
+
  
+5. We can use valut provider to set the secrets
 
  

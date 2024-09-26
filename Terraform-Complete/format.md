@@ -16,6 +16,9 @@ Terraform Format
  - terraform apply (--auto-approve)
  - terraform destroy (--auto-destory), Individual resource delete or auto destroy there are some other commands based on this.
  - terraform state
+ - terraform state pull ( To pull remote state file )
+ - terraform state mv aws_vpc.myvpc2 aws_vpc.2myvpc ( To remote resource in statefile ) we can also use -backup-out="./"
+
 
 
 

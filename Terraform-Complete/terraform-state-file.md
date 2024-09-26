@@ -4,6 +4,20 @@
 - So this state file or terraform will check if the difference between actual resource and desired resource
 - Here actual resource or actual state is nothing but what we have in the environment and desire is nothing but what we want to create resource.
 
+### To pull the statefile form the remote repo
+``` terraform state pull ```
+
+### To rename resource in terraform statefile
+- ```terraform state mv aws_vpc.myvpc2 aws_vpc.2myvpc``` ( To remote resource in statefile ) we can also use -backup-out="./"
+
+### To remove resource in terrafrom statefile
+- ``` terraform state rm aws_vpc.importvpc ``` use backup if needed
+- If we have delete resource manaully then we can remove in statefile as well.
+
+### To debug 
+``` export TF_LOG=TRACE ```
+- This will log warn,info, error and etc
+
 ### How to manage like manual changes into AWS resources directly in the console without using terraform
 
 - ![1723879653036](image/terraform-state-file/1723879653036.png)
