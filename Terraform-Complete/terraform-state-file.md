@@ -14,6 +14,11 @@
 - ``` terraform state rm aws_vpc.importvpc ``` use backup if needed
 - If we have delete resource manaully then we can remove in statefile as well.
 
+### Refresh the state file
+- ``` terraform refresh ```
+- This command will check what is in statefile and actual resources that are there in aws 
+- Even ``` terraform plan ``` can also refresh the state
+
 ### To debug 
 ``` export TF_LOG=TRACE ```
 - This will log warn,info, error and etc
@@ -62,3 +67,13 @@
   Requires explicit confirmation before making state changes
 
   ```
+
+  ### State Management
+  - Only one backend allowed
+  - Secrets are stored in state
+  - state lokcing when working with teams
+  - State is stored in memory when using a remote backend
+  - standard + enchanced backends
+  - no interpolation allowed in backend setup
+  - terraform refersh will attemplt to resync the state
+  - terraform state push will override the state
