@@ -17,7 +17,7 @@
 
 ## NOTE : IF WE DON'T WANT TO INSTALL THEN USE ONLINE 
 
-- Use command - ``` terraform graph ```
+- Use command - ``` terraform graph ``` to get the graph
 - Use or open link : ``` https://dreampuf.github.io/ ```
 
 - ![alt text](image-2.png)
