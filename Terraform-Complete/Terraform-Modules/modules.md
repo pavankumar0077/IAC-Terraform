@@ -33,3 +33,6 @@ Variables and Input Parameters
 
 
 - ![alt text](image-2.png)
+
+- When you add a new module to a configuration, Terraform must download it before it can be used.
+- ``` terraform get ``` or ``` terraform init ```
